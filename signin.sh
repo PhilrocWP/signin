@@ -1,5 +1,4 @@
 #!/bin/bash
-trap rm logs.txt EXIT
 if [ -a accounts.txt ] && [ -a logs.txt ]; then
 	if [ -s accounts.txt ]; then
 		read -p "Type in username, type ”new” if you're a new user, or press Ctrl + C to exit: " uname
